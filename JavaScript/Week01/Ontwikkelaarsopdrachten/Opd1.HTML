@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const age = 18;
+      const birthYear = 1988;
+      switch (true) {
+        case getResult(age, birthYear):
+          console.log("Great!");
+          break;
+        default:
+          console.log("Vos!");
+      }
+      function getResult(age, birthYear) {
+        return age >= 18 && String(birthYear).includes("88");
+      }
+    </script>
+  </body>
+</html>
