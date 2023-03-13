@@ -1,0 +1,24 @@
+1. Welke valkuilen zijn er als je leert programmeren?
+Weinig resultaat zien in het begin en daardoor motivatie verliezen.
+2. In welke valkuilen ben jij getrapt?
+weinig resultaat.
+3. Welke valkuilen heb je reeds opgelost? Hoe heb je dat gedaan?
+Door werken.
+4. In welke valkuilen trap je nog steeds in? Wat is je plan om ze op te lossen?
+geen.
+5. In welke valkuilen trap je nog steeds in? Wat is je plan om ze op te lossen?
+geen.
+6. Wat betekent het dat je goed bent in “problemen oplossen” met betrekking tot code?
+Informatie opzoeken en gebruiken om een oplossing te vinden voor het probleem.
+7. Welke valkuilen zijn er als het gaat over “problemen oplossen” in programmeren?
+Weet ik niet.
+8. In welke valkuilen ben jij getrapt?
+geen.
+9. Welke valkuilen heb je reeds opgelost? Hoe heb je dat gedaan?
+geen.
+10. In welke valkuilen trap je nog steeds in? Wat is je plan om ze op te lossen?
+geen.
+11. In welke valkuilen trap je nog steeds in? Wat is je plan om ze op te lossen?
+geen.
+12. Welke vier stappenframework kan je gebruiken om codeerproblemen op te lossen?
+Wat is het probleem, Wat weet ik er van, Extra informatie opzoeken, oplossen.
