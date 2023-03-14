@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <style>
+      div > div {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="grid-container__item">
+        <div class="klik">A</div>
+        <div class="klik">B</div>
+        <div class="klik">C</div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".klik").forEach(function (element) {
+        element.onclick = roze;
+      });
+      function roze() {
+        document.querySelectorAll(".klik").forEach(function (element) {
+          element.style.width = "200px";
+          console.log("Geklikt");
+        });
+      }
+    </script>
+  </body>
+</html>

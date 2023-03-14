@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <style>
+      div > div {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+      }
+      #klik {
+        background-color: pink;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div id="klik">KLIK</div>
+      <div><img src="img/tijger.jpg" id="myImage" style="width: 100px" /></div>
+    </div>
+
+    <script>
+      document.getElementById("klik").onclick = function () {
+        changeImage();
+      };
+      function changeImage() {
+        var image = document.getElementById("myImage");
+        if (Math.floor(Math.random() * 2) === 0) {
+          image.setAttribute("src", "img/leeuw.jpg");
+          image.setAttribute("alt", "New Image");
+        } else {
+          image.setAttribute("src", "img/tijger.jpg");
+          image.setAttribute("alt", "New Image");
+        }
+      }
+    </script>
+  </body>
+</html>

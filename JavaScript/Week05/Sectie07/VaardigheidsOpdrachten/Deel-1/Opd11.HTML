@@ -10,7 +10,9 @@
 
   <body>
     <div class="grid-container">
-      <div class="grid-container_item grid-container_item-1">A</div>
+      <div id="demo" class="grid-container_item grid-container_item-1">
+        <p>A</p>
+      </div>
       <div class="grid-container_item grid-container_item-2">B</div>
       <div class="grid-container_item grid-container_item-3">C</div>
       <div class="grid-container_item grid-container_item-4">D</div>
@@ -41,6 +43,23 @@
       getGridItem(5).innerText = "Konijntje 16";
       getGridItem(6).innerText = "Konijntje 25";
       getGridItem(7).innerText = "Konijntje 36";
+
+      document.getElementById("demo").onmousedown = function () {
+        mouseDown();
+      };
+      document.getElementById("demo").onmouseup = function () {
+        mouseUp();
+      };
+
+      function mouseDown() {
+        document.getElementById("demo").innerHTML =
+          "The mouse button is held down.";
+      }
+
+      function mouseUp() {
+        document.getElementById("demo").innerHTML =
+          "You released the mouse button.";
+      }
     </script>
   </body>
 </html>
