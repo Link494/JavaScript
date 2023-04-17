@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="Opd1.CSS
+    "
+    />
+  </head>
+  <body>
+    <div class="a"><h>SCORE </h><h id="htmlScore">4</h></div>
+    <div class="grid">
+      <div id="htmlGetalEen" class="b"></div>
+      <div
+        id="htmlRekenen"
+        class="b"
+        style="background-color: lightgreen"
+      ></div>
+      <div id="htmlGetalTwee" class="b"></div>
+    </div>
+    <div class="c">
+      <label for="fname"></label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <input
+        id="tekstHokje"
+        type="submit"
+        value="Submit"
+        style="position: absolute; left: 250px; top: 50%"
+      />
+    </div>
+
+    <script>
+      let getalEen = 0;
+      let getalTwee = 0;
+      let rekenen = 0;
+      let antwoord = 0;
+      let antwoordString;
+      let score = 0;
+
+      function start() {
+        getalEen = Math.floor(Math.random() * 100);
+        getalTwee = Math.floor(Math.random() * 100);
+        rekenen = Math.floor(Math.random() * 4);
+
+        if (rekenen === 0) {
+          antwoord = getalEen + getalTwee;
+          antwoordString = "+";
+        }
+        if (rekenen === 1) {
+          antwoord = getalEen - getalTwee;
+          antwoordString = "-";
+        }
+        if (rekenen === 2) {
+          antwoord = getalEen * getalTwee;
+          antwoordString = "*";
+          getalTwee = Math.floor(Math.random() * 5);
+        }
+        if (rekenen === 3) {
+          getalTwee = Math.floor(Math.random() * 5);
+          antwoord = getalEen / getalTwee;
+          antwoordString = "/";
+        }
+
+        console.log(
+          getalEen +
+            " " +
+            antwoordString +
+            " " +
+            getalTwee +
+            " " +
+            "=" +
+            " " +
+            Math.round(antwoord)
+        );
+        let colorElement = document.getElementById("htmlGetalEen");
+        colorElement.textContent = getalEen;
+
+        let colorElement1 = document.getElementById("htmlRekenen");
+        colorElement1.textContent = antwoordString;
+
+        let colorElement2 = document.getElementById("htmlGetalTwee");
+        colorElement2.textContent = getalTwee;
+
+        let colorElement3 = document.getElementById("htmlScore");
+        colorElement3.textContent = score;
+      }
+
+      document.getElementById("tekstHokje").onclick = info;
+      function info() {
+        let answer = document.getElementById("fname").value;
+        console.log(answer);
+
+        if (parseInt(answer) === antwoord) {
+          console.log("Goed!");
+          document.body.style.backgroundColor = "green";
+          score++;
+          start();
+        } else {
+          console.log("Fout!");
+          document.body.style.backgroundColor = "red";
+          start();
+        }
+      }
+
+      start();
+    </script>
+  </body>
+</html>

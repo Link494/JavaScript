@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Yahtzee.CSS" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="img/yahtzee2.png" />
+  </head>
+  <body>
+    <!--Bovenste vak-->
+    <div class="box"></div>
+    <div class="grid-container2">
+      <!--Rij 1-->
+      <div class="grid-item column1">PART 1</div>
+      <div class="grid-item">SCORE</div>
+      <div class="grid-item">GAME 1</div>
+      <div class="grid-item"></div>
+
+      <!--Rij 2-->
+      <div class="grid-item column1">
+        ACES
+        <img
+          src="img/dice1.png"
+          alt="dice6"
+          style="width: 24px; height: auto; margin-left: 131px"
+        />
+      </div>
+      <div class="grid-item">TOTAL 1'S</div>
+      <div class="grid-item hover" id="total1s">
+        <p1 id="total1"></p1>
+      </div>
+      <div class="grid-item"><p1 id="Total1"></p1></div>
+
+      <!--Rij 3-->
+      <div class="grid-item column1">
+        TWOS
+        <img
+          src="img/dice2.png"
+          alt="dice6"
+          style="width: 24px; height: auto; margin-left: 128px"
+        />
+      </div>
+      <div class="grid-item">TOTAL 2'S</div>
+      <div class="grid-item hover" id="total2s"><p1 id="total2"></p1></div>
+      <div class="grid-item"><p1 id="Total2"></p1></div>
+
+      <!--Rij 4-->
+      <div class="grid-item column1">
+        THREES
+        <img
+          src="img/dice3.png"
+          alt="dice6"
+          style="width: 24px; height: auto; margin-left: 117px"
+        />
+      </div>
+      <div class="grid-item">TOTAL 3'S</div>
+      <div class="grid-item hover" id="total3s"><p1 id="total3"></p1></div>
+      <div class="grid-item"><p1 id="Total3"></p1></div>
+
+      <!--Rij 5-->
+      <div class="grid-item column1">
+        FOURS
+        <img
+          src="img/dice4.png"
+          alt="dice6"
+          style="width: 24px; height: auto; margin-left: 124px"
+        />
+      </div>
+      <div class="grid-item">TOTAL 4'S</div>
+      <div class="grid-item hover" id="total4s"><p1 id="total4"></p1></div>
+      <div class="grid-item"><p1 id="Total4"></p1></div>
+
+      <!--Rij 6-->
+      <div class="grid-item column1">
+        FIVES
+        <img
+          src="img/dice5.png"
+          alt="dice6"
+          style="width: 25px; height: auto; margin-left: 130px"
+        />
+      </div>
+      <div class="grid-item">TOTAL 5'S</div>
+      <div class="grid-item hover" id="total5s"><p1 id="total5"></p1></div>
+      <div class="grid-item"><p1 id="Total5"></p1></div>
+
+      <!--Rij 7-->
+      <div class="grid-item column1">
+        SIXES
+
+        <img
+          src="img/dice6.png"
+          alt="dice6"
+          style="width: 25px; height: auto; margin-left: 130px"
+        />
+      </div>
+      <div class="grid-item">TOTAL 6'S</div>
+      <div class="grid-item hover" id="total6s"><p1 id="total6"></p1></div>
+      <div class="grid-item"><p1 id="Total6"></p1></div>
+
+      <!--Rij 8-->
+      <div class="grid-item column1" style="border-right: none">
+        TOTAL POINTS
+      </div>
+      <div class="arrow">&rarr;</div>
+      <div class="grid-item" id="total7s"><p1 id="total7"></p1></div>
+      <div class="grid-item"><p1 id="Total7"></p1></div>
+
+      <!--Rij 9-->
+      <div class="grid-item column1">Extra BONUS</div>
+      <div class="grid-item" style="font-weight: bold">35 POINTS</div>
+      <div class="grid-item" id="total8s">
+        <p1 id="total8"></p1>
+      </div>
+      <div class="grid-item">
+        <p1 id="Total8"></p1>
+      </div>
+
+      <!--Rij 10-->
+      <div class="grid-item column1" style="border-right: none">TOTAL</div>
+      <div class="arrow">&rarr;</div>
+      <div class="grid-item" id="total9s"><p1 id="total9"></p1></div>
+      <div class="grid-item"><p1 id="Total9"></p1></div>
+    </div>
+
+    <!--Bovenste vak-->
+    <div class="grid-container">
+      <!--Rij 1-->
+      <div class="grid-item column1">THREE OF A KIND</div>
+      <div class="grid-item">TOTAL DICE</div>
+      <div class="grid-item hover" id="total11s"><p1 id="total11"></p1></div>
+      <div class="grid-item"><p1 id="Total11"></p1></div>
+
+      <!--Rij 2-->
+      <div class="grid-item column1">FOUR OF A KIND</div>
+      <div class="grid-item">TOTAL DICE</div>
+      <div class="grid-item hover" id="total12s"><p1 id="total12"></p1></div>
+      <div class="grid-item"><p1 id="Total12"></p1></div>
+
+      <!--Rij 3-->
+      <div class="grid-item column1">FULL HOUSE</div>
+      <div class="grid-item">25 POINTS</div>
+      <div class="grid-item hover" id="total13s"><p1 id="total13"></p1></div>
+      <div class="grid-item"><p1 id="Total13"></p1></div>
+
+      <!--Rij 4-->
+      <div class="grid-item column1">SMALL STRAIGHT</div>
+      <div class="grid-item">30 POINTS</div>
+      <div class="grid-item hover" id="total14s"><p1 id="total14"></p1></div>
+      <div class="grid-item"><p1 id="Total14"></p1></div>
+
+      <!--Rij 5-->
+      <div class="grid-item column1">LARGE STRAIGHT</div>
+      <div class="grid-item">40 POINTS</div>
+      <div class="grid-item hover" id="total15s"><p1 id="total15"></p1></div>
+      <div class="grid-item"><p1 id="Total15"></p1></div>
+
+      <!--Rij 6-->
+      <div class="grid-item column1">YAHTZEE</div>
+      <div class="grid-item">50 POINTS</div>
+      <div class="grid-item hover" id="total16s"><p1 id="total16"></p1></div>
+      <div class="grid-item"><p1 id="Total16"></p1></div>
+
+      <!--Rij 7-->
+      <div class="grid-item column1">CHANCE</div>
+      <div class="grid-item">TOTAL DICE</div>
+      <div class="grid-item hover" id="total17s"><p1 id="total17"></p1></div>
+      <div class="grid-item"><p1 id="Total17"></p1></div>
+
+      <!--Rij 8-->
+      <div class="grid-item column1" style="border-right: none">
+        TOTAL PART 2
+      </div>
+      <div class="arrow">&rarr;</div>
+      <div class="grid-item" id="total18s"><p1 id="total18"></p1></div>
+      <div class="grid-item"><p1 id="Total18"></p1></div>
+
+      <!--Rij 9-->
+      <div class="grid-item column1" style="border-right: none">
+        TOTAL PART 1
+      </div>
+      <div class="arrow">&rarr;</div>
+      <div class="grid-item" id="total19s"><p1 id="total19"></p1></div>
+      <div class="grid-item"><p1 id="Total19"></p1></div>
+
+      <!--Rij 10-->
+      <div class="grid-item column1" style="border-right: none">
+        TOTAL SCORE
+      </div>
+      <div class="arrow">&rarr;</div>
+      <div class="grid-item" id="total20s"><p1 id="total20"></p1></div>
+      <div class="grid-item"><p1 id="Total20"></p1></div>
+    </div>
+
+    <div class="dice-container">
+      <div class="dice"><img id="dice1" src="img/vraagteken.png" alt="" /></div>
+      <div class="dice"><img id="dice2" src="img/vraagteken.png" alt="" /></div>
+      <div class="dice"><img id="dice3" src="img/vraagteken.png" alt="" /></div>
+      <div class="dice"><img id="dice4" src="img/vraagteken.png" alt="" /></div>
+      <div class="dice"><img id="dice5" src="img/vraagteken.png" alt="" /></div>
+
+      <button id="roll">Roll Dices</button>
+    </div>
+    <h2 id="rollsLeft" style="color: white"></h2>
+    <div id="debug"></div>
+    <img src="img/yahtzee.png" class="logo" />
+
+    <script src="Yahtzee.JS"></script>
+    <script src="Score.JS"></script>
+    <script src="input.JS"></script>
+    <script src="Score copy.JS"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+body {
+  background-color: rgb(5, 5, 44);
+  margin: 75px;
+}
+
+div {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+.a {
+  background-color: pink;
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+}
+.b {
+  background-color: blue;
+  width: 133px;
+  height: 150px;
+  line-height: 140px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 133px);
+}
+
+.c {
+  background-color: orange;
+  width: 400px;
+  height: 150px;
+  line-height: 140px;
+  margin: 0px;
+}
